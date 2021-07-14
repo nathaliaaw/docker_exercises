@@ -1,0 +1,9 @@
+version: '3'
+services:
+    web: 
+        container_name: nginx2
+        ports:
+            - "8080:80"
+        volumes:
+            - '${pwd}:/usr/share/nginx/html'
+        image: nginx
